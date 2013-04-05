@@ -3,6 +3,7 @@ package com.hades.grid;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.widget.ImageButton;
 
 public class Level1 extends Activity {
 
@@ -10,6 +11,8 @@ public class Level1 extends Activity {
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_level_1);
+		
+		ImageButton[][] iButton = new ImageButton[5][5];
 		
 	}
 	

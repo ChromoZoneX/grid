@@ -33,7 +33,7 @@ public class SelectLevelActivity extends Activity{
 		ArrayList<String> levelList = new ArrayList<String>(); 
 		levelList.add("One   (5 X 5)");
 		levelList.add("Two   (6 X 6)");
-		levelList.add("Three (7 X 4)");
+		levelList.add("Three (7 X 7)");
 		ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, 
 				android.R.layout.simple_list_item_1, levelList);
 		lv.setAdapter(arrayAdapter);
@@ -56,7 +56,6 @@ public class SelectLevelActivity extends Activity{
 					Intent i = new Intent(SelectLevelActivity.this, Level3.class);
 					startActivityForResult(i,2);
 				}
-				
 			}
 		});
 		
