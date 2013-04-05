@@ -11,7 +11,7 @@ public class Level1 extends Activity {
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_level_1);
-
+		
 		ImageButton[][] gridButton = new ImageButton[5][5];
 		//First row
 		gridButton[0][0] = (ImageButton) findViewById(R.id.imageButton1);
