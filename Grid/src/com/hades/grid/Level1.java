@@ -1,18 +1,23 @@
 package com.hades.grid;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ImageButton;
 
 public class Level1 extends Activity {
 
+	@TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_level_1);
 		
 		ImageButton[][] gridButton = new ImageButton[5][5];
+		
 		//First row
 		gridButton[0][0] = (ImageButton) findViewById(R.id.imageButton1);
 		gridButton[0][1] = (ImageButton) findViewById(R.id.ImageButton01);
@@ -44,6 +49,17 @@ public class Level1 extends Activity {
 		gridButton[1][3] = (ImageButton) findViewById(R.id.ImageButton04);
 		gridButton[1][4] = (ImageButton) findViewById(R.id.ImageButton02);
 		
+		gridButton[0][0].setImageResource(ButtonIcon.power0);
+		gridButton[0][1].setImageResource(ButtonIcon.power0);
+		gridButton[0][2].setImageResource(ButtonIcon.power0);
+		gridButton[0][3].setImageResource(ButtonIcon.power0);
+		gridButton[0][4].setImageResource(ButtonIcon.power0);
+		
+//		for (int i = 0; i < 5; i++){
+//			for (int j = 0; j < 5; j++){
+//				gridButton[i][j].invalidate();
+//			}
+//		}
 		
 	}
 	
