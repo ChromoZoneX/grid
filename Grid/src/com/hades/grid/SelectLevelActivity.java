@@ -3,24 +3,15 @@ package com.hades.grid;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.View;
-import android.widget.Button;
 
-public class MainMenuActivity extends Activity {
-
+class SelectLevelActivity extends Activity{
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main_menu);
+		setContentView(R.layout.activity_select_level);
 		
-		Button play = (Button) findViewById(R.id.playButton);
-		play.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				
-			}
-		});
+//		Button back = (Button)
 	}
 
 	@Override
