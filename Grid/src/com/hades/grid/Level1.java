@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class Level1 extends Activity {
-
+	
 	@TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
@@ -90,7 +90,9 @@ public class Level1 extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				ButtonIcon.changeIcon(gridButton[0][0].getDrawableState());
+				int newId = ButtonIcon.changeIconId(gridButton[0][0].getDrawableState());
+				gridButton[0][0].setImageResource(newId);
+				gridButton[0][0].invalidate();
 			}
 		});
 		

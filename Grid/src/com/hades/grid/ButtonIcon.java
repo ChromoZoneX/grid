@@ -35,14 +35,17 @@ public class ButtonIcon{
 	};
 	
 	public static int[] t = {
-	//T-shaped wire sprite
-	R.drawable.t0,
-	R.drawable.t1,
-	R.drawable.t2,
-	R.drawable.t3
+		//T-shaped wire sprite
+		R.drawable.t0,
+		R.drawable.t1,
+		R.drawable.t2,
+		R.drawable.t3
 	};
 	
-	public static void changeIcon(int[] id){
-		
+	public static int changeIconId(int[] id){
+		if (id[0] == l[0]){
+			return l[1];
+		}
+		else return -1;
 	}
 }
