@@ -1,6 +1,9 @@
 package com.hades.grid;
 
-public class ButtonIcon{
+import android.app.Activity;
+import android.graphics.drawable.Drawable;
+
+public class ButtonIcon extends Activity{
 	
 	public static int[] l = {
 		//Load sprite
@@ -42,10 +45,16 @@ public class ButtonIcon{
 		R.drawable.t3
 	};
 	
-	public static int changeIconId(int[] id){
-		if (id[0] == l[0]){
-			return l[1];
+	//Bitmap versions of the images
+//	Bitmap[] bL = {
+//			BitmapDrawable(getResources().getDrawable(R.drawable.load0)).getBitmap(),
+//			
+//	};
+	
+	public int changeIconId(Drawable object){
+		if (object.equals(getResources().getDrawable(R.drawable.load0))){
+			return R.drawable.load1;
 		}
-		else return -1;
+		else return R.drawable.straight0;
 	}
 }

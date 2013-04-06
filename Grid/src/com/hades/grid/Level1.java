@@ -2,7 +2,7 @@ package com.hades.grid;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.graphics.drawable.Drawable;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
@@ -87,12 +87,13 @@ public class Level1 extends Activity {
 		/**********************************************************************/
 		
 		gridButton[0][0].setOnClickListener(new View.OnClickListener() {
-			
+			ButtonIcon justAnObject = new ButtonIcon();
 			@Override
 			public void onClick(View v) {
-				int newId = ButtonIcon.changeIconId(gridButton[0][0].getDrawableState());
+//				int newId = ButtonIcon.changeIconId(((BitmapDrawable)gridButton[0][0].getDrawable()).getBitmap());
+				int newId = justAnObject.changeIconId(gridButton[0][0].getDrawable());
 				gridButton[0][0].setImageResource(newId);
-				gridButton[0][0].invalidate();
+				
 			}
 		});
 		
