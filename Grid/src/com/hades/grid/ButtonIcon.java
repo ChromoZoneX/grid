@@ -1,10 +1,14 @@
 package com.hades.grid;
 
-import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 
-public class ButtonIcon extends Activity{
+public class ButtonIcon{
 	
+	MainMenuActivity level = new MainMenuActivity(); 
+	
+	/********5x5 grid*******************/
 	public static int[] l = {
 		//Load sprite
 		R.drawable.load0,
@@ -44,17 +48,85 @@ public class ButtonIcon extends Activity{
 		R.drawable.t2,
 		R.drawable.t3
 	};
+	/*-----------------------------------------------------------------------*/
 	
-	//Bitmap versions of the images
-//	Bitmap[] bL = {
-//			BitmapDrawable(getResources().getDrawable(R.drawable.load0)).getBitmap(),
-//			
-//	};
+	/********6x6 grid*******************/
+	public static int[] l6x6 = {
+		//Load sprite
+		R.drawable.load06,
+		R.drawable.load16,
+		R.drawable.load26,
+		R.drawable.load36
+	};
 	
-	public int changeIconId(Drawable object){
-		if (object.equals(getResources().getDrawable(R.drawable.load0))){
-			return R.drawable.load1;
-		}
-		else return R.drawable.straight0;
-	}
+	public static int[] p6x6 = {
+		//Power sprite
+		R.drawable.power06,
+		R.drawable.power16,
+		R.drawable.power26,
+		R.drawable.power36
+	};
+	
+	public static int[] r6x6 = {
+		//Right angled wire sprite
+		R.drawable.right06,
+		R.drawable.right16,
+		R.drawable.right26,
+		R.drawable.right36
+	};
+	
+	public static int[] s6x6 = {
+		//Straight wire sprite
+		R.drawable.straight06,
+		R.drawable.straight16
+	};
+	
+	public static int[] t6x6 = {
+		//T-shaped wire sprite
+		R.drawable.t06,
+		R.drawable.t16,
+		R.drawable.t26,
+		R.drawable.t36
+	};
+	/**************************************************************************/
+	
+	/********7x7 grid*******************/
+	public static int[] l7 = {
+		//Load sprite
+		R.drawable.load07,
+		R.drawable.load17,
+		R.drawable.load27,
+		R.drawable.load37
+	};
+	
+	public static int[] p7 = {
+		//Power sprite
+		R.drawable.power07,
+		R.drawable.power17,
+		R.drawable.power27,
+		R.drawable.power37,
+	};
+	
+	public static int[] r7 = {
+		//Right angled wire sprite
+		R.drawable.right07,
+		R.drawable.right17,
+		R.drawable.right27,
+		R.drawable.right37
+	};
+	
+	public static int[] s7 = {
+		//Straight wire sprite
+		R.drawable.straight07,
+		R.drawable.straight17
+	};
+	
+	public static int[] t7 = {
+		//T-shaped wire sprite
+		R.drawable.t07,
+		R.drawable.t17,
+		R.drawable.t27,
+		R.drawable.t37
+	};
+	/*-----------------------------------------------------------------------*/
 }
