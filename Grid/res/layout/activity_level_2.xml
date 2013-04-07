@@ -293,7 +293,7 @@
         android:src="@android:drawable/btn_star" />
 
     <TextView
-        android:id="@+id/victoryText"
+        android:id="@+id/level3Victory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ImageButton34"
@@ -304,10 +304,10 @@
         android:textSize="40dp" />
 
     <Button
-        android:id="@+id/backlevel2"
+        android:id="@+id/backlevel3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/victoryText"
+        android:layout_below="@+id/level3Victory"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="44dp"
         android:text="Back" />

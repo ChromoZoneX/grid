@@ -18,7 +18,7 @@ public class Level2 extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_level_2);
 		
-		Button back = (Button) findViewById(R.id.backlevel2);
+		Button back = (Button) findViewById(R.id.backlevel3);
 		back.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -634,7 +634,7 @@ public class Level2 extends Activity {
 	
 	private void levelComplete(boolean decision){
 		if (decision){
-			TextView levelComplete = (TextView) findViewById(R.id.victoryText);
+			TextView levelComplete = (TextView) findViewById(R.id.level3Victory);
 			levelComplete.setText("Level Complete!");
 		}
 	}
