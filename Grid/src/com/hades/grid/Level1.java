@@ -3,6 +3,7 @@ package com.hades.grid;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Level1 extends Activity {
 	
@@ -478,9 +480,13 @@ public class Level1 extends Activity {
 	
 	private void levelComplete(boolean decision){
 		if (decision){
-			TextView levelComplete = (TextView) findViewById(R.id.levelComplete);
-			levelComplete.setText("Level Complete!");
+			displayToast("You have completed this level! Please press back to choose another.");
 		}
+	}
+	
+	private void displayToast(String s){
+		Toast toast = Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT);
+		toast.show();
 	}
 	
 	private void Activityfinish(){

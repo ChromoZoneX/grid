@@ -4,14 +4,17 @@ import java.util.ArrayList;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class SelectLevelActivity extends Activity{
 	 
@@ -31,9 +34,9 @@ public class SelectLevelActivity extends Activity{
 		
 		final ListView lv = (ListView) findViewById(R.id.levelList);
 		ArrayList<String> levelList = new ArrayList<String>(); 
-		levelList.add("One   (5 X 5)");
-		levelList.add("Two   (6 X 6)");
-		levelList.add("Three (7 X 7)");
+		levelList.add("                         One   (5 X 5)");
+		levelList.add("                         Two   (6 X 6)");
+		levelList.add("                         Three (7 X 7)");
 		ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, 
 				android.R.layout.simple_list_item_1, levelList);
 		lv.setAdapter(arrayAdapter);

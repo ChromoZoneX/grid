@@ -27,6 +27,7 @@
         <activity android:name="Level2"></activity>
         <activity android:name="Level3"></activity>
         <activity android:name="ButtonIcon"></activity>
+        <activity android:name="InstructionsActivity"></activity>
     </application>
 
 </manifest>

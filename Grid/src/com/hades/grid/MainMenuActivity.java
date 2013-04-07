@@ -24,6 +24,16 @@ public class MainMenuActivity extends Activity {
 			}
 		});
 		
+		Button instruction = (Button) findViewById(R.id.instructionButton);
+		instruction.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(MainMenuActivity.this, InstructionsActivity.class);
+				startActivityForResult(i,2);
+			}
+		});
+		
 	}
 	
 	@Override

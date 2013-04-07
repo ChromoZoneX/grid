@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Level3 extends Activity{
 
@@ -818,9 +819,13 @@ public class Level3 extends Activity{
 	
 	private void levelComplete(boolean decision){
 		if (decision){
-			TextView levelComplete = (TextView) findViewById(R.id.level3Victory);
-			levelComplete.setText("Level Complete!");
+			displayToast("You have completed this level! Please press back to choose another.");
 		}
+	}
+	
+	private void displayToast(String s){
+		Toast toast = Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT);
+		toast.show();
 	}
 	
 	private void Activityfinish(){
