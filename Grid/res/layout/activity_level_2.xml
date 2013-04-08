@@ -310,6 +310,7 @@
         android:layout_below="@+id/level3Victory"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="19dp"
+        android:background="@android:drawable/btn_default"
         android:text="Back" />
 
 </RelativeLayout>

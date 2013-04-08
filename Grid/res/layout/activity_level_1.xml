@@ -222,6 +222,7 @@
         android:layout_below="@+id/levelComplete"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
+        android:background="@android:drawable/btn_default"
         android:text="Back" />
 
 </RelativeLayout>
